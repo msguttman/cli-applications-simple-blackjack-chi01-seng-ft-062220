@@ -41,9 +41,8 @@ end
 def hit?(current_total)
   # code hit? here
   new_total = current_total
-  while new_total < 21 do
-    prompt_user
-    user_input = "h" #get_user_input
+  prompt_user
+  user_input = get_user_input
     if user_input == "h"
       new_card = deal_card
       new_total = new_total + new_card
