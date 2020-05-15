@@ -46,11 +46,11 @@ def hit?(current_total)
     if user_input == "h"
       new_card = deal_card
       new_total = new_total + new_card
-      new_total
+      return new_total
     elsif user_input == "s"
-      new_total
+      return new_total
     else invalid_command
-      new_total
+      return new_total
     end
   end
 end
