@@ -21,7 +21,7 @@ end
 
 def get_user_input
   # code #get_user_input here
-  gets
+  gets.chomp
 end
 
 def end_game(card_total)
@@ -45,7 +45,7 @@ def hit?(current_total)
     prompt_user
     user_input = get_user_input
     if user_input == "h"
-      new_card = 3 #deal_card
+      new_card = deal_card
       new_total = new_total + new_card
       new_total
     elsif user_input == "s"
